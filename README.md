@@ -6,13 +6,13 @@ Marketing Campaign Analysis: Who Should We Target Next?
 
 <img width="2398" height="1798" alt="Dashboard 1" src="https://github.com/user-attachments/assets/5cbfa42f-19dd-42c9-9ca6-477dab9ead9d" />
 
-Business question
+Business question:
 
 A company ran six marketing campaigns. Which customers are most likely to respond, and who should the next campaign target?
 
 I focused on the **last campaign** (the `response` column). It is the best guide to how customers respond now. The first five campaigns were used for context only.
 
-Summary of findings
+Summary of findings:
 
 - 14.9% of customers accepted the last offer. That is about double the best earlier campaign (7.5%), so I used 14.9% as the baseline.
 - **Income** is the strongest driver. Customers earning $70k or more respond far more than everyone else.
@@ -28,14 +28,14 @@ Summary of findings
 
 Customers with all three traits responded at more than three times the 14.9% average.
 
-Recommendation
+Recommendation:
 
 1. **Prioritize** customers with income of $70k or more, who are not partnered, and have no teens at home.
 2. **Next tier:** customers with two of the three traits (20.8%).
 3. **De-emphasize** customers with none of the traits (6.5%).
 4. **Messaging:** responders spend the most on wine and meat, so lead with those, and consider the catalog channel. This part is suggestive only, because I did not test whether spend and catalog use simply reflect higher income.
 
-How the analysis went
+How the analysis went:
 
 1. **Checked the data first.** Null counts for every column, duplicate IDs, value ranges, and the values in categorical columns.
 2. **Made cleaning decisions.** Rows are never deleted. Each query that needs a filter has it in the `where` clause (see below).
@@ -43,7 +43,7 @@ How the analysis went
 4. **Checked for confounding.** Education and kids at home might just reflect income, so I split each one within income groups (under $70k vs. $70k and over) and compared again. Groups smaller than 30 customers were dropped.
 5. **Built the favorable-traits score** from the factors that held up, and checked how response changed with each added trait.
 
-Data cleaning decisions
+Data cleaning decisions:
 
 | Issue | Customers | Decision |
 |---|---|---|
@@ -57,7 +57,7 @@ Data cleaning decisions
 - Age is calculated as 2014 minus birth year. The dataset does not state a collection date, so I used the year of the latest enrollment date in the data.
 
 
-Limitations
+Limitations:
 
 - **This shows association, not causation.** These patterns describe who responded. They do not prove that a trait made someone respond.
 - **Small groups.** Some groups (for example two kids at home, about 48 customers) are too small to read.
