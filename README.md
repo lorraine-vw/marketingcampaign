@@ -2,7 +2,9 @@ Marketing Campaign Analysis: Who Should We Target Next?
 
 - Tools: PostgreSQL (DBeaver), Tableau Public
 - Data: [Marketing Campaign dataset on Kaggle](https://www.kaggle.com/datasets/rodsaldanha/arketing-campaign), 2,240 customers
-- Dashboard: [add Tableau Public link here]
+- Dashboard: https://public.tableau.com/app/profile/lorraine.wangsawidjaja/viz/marketingcampaignproject/Dashboard1
+
+<img width="2398" height="1798" alt="Dashboard 1" src="https://github.com/user-attachments/assets/5cbfa42f-19dd-42c9-9ca6-477dab9ead9d" />
 
 Business question
 
