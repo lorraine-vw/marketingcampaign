@@ -23,6 +23,7 @@ Summary of findings:
 | Favorable traits | Response rate |
 |---|---|
 | 0 | 6.5% |
+| 1 | 11.7% |
 | 2 | 20.8% |
 | 3 | 49.7% (145 customers) |
 
